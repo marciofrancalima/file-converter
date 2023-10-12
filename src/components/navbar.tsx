@@ -10,22 +10,22 @@ import {
 } from './ui/sheet'
 export const Navbar = () => {
   return (
-    <nav className="w-full backdrop-blur-md bg-white bg-opacity-30 z-50 fixed h-24 flex justify-between items-center py-10 px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-24">
+    <nav className="fixed z-50 flex h-24 w-full items-center justify-between bg-white bg-opacity-30 px-4 py-10 backdrop-blur-md md:px-8 lg:px-12 xl:px-16 2xl:px-24">
       <Link href="/">
-        <Package className="w-12 h-12" />
+        <Package className="h-12 w-12" />
       </Link>
 
-      <div className="gap-1 md:gap-2 lg:gap-4 hidden md:flex">
-        <Button variant="ghost" className="font-semibold text-md">
+      <div className="hidden gap-1 md:flex md:gap-2 lg:gap-4">
+        <Button variant="ghost" className="text-md font-semibold">
           <Link href="/">Home</Link>
         </Button>
         <Link href="/about">
-          <Button variant="ghost" className="font-semibold text-md">
+          <Button variant="ghost" className="text-md font-semibold">
             Sobre
           </Button>
         </Link>
         <Link href="/privacy-policy">
-          <Button variant="ghost" className="font-semibold text-md">
+          <Button variant="ghost" className="text-md font-semibold">
             Termos
           </Button>
         </Link>
@@ -35,7 +35,7 @@ export const Navbar = () => {
         <Button
           variant="default"
           size="lg"
-          className="rounded-full w-fit bg-green-600 gap-2 items-center hidden md:flex"
+          className="hidden w-fit items-center gap-2 rounded-full bg-green-600 md:flex"
         >
           <span>Github</span>
           <span className="text-xl">
@@ -46,7 +46,7 @@ export const Navbar = () => {
 
       {/* Mobile Nav */}
       <Sheet>
-        <SheetTrigger className="block md:hidden p-3">
+        <SheetTrigger className="block p-3 md:hidden">
           <span className="text-2xl">
             <Menu />
           </span>
@@ -58,7 +58,7 @@ export const Navbar = () => {
                 <Link href="/">
                   <Button
                     variant="link"
-                    className="font-semibold text-md w-full"
+                    className="text-md w-full font-semibold"
                   >
                     Home
                   </Button>
@@ -66,7 +66,7 @@ export const Navbar = () => {
                 <Link href="/about">
                   <Button
                     variant="link"
-                    className="font-semibold text-md w-full"
+                    className="text-md w-full font-semibold"
                   >
                     Sobre
                   </Button>
@@ -74,7 +74,7 @@ export const Navbar = () => {
                 <Link href="/privacy-policy">
                   <Button
                     variant="link"
-                    className="font-semibold text-md w-full"
+                    className="text-md w-full font-semibold"
                   >
                     Termos
                   </Button>
