@@ -31,7 +31,7 @@ export const Navbar = () => {
         </Link>
       </div>
 
-      <Link href="https://github.com/benlhachemi/file-converter.git">
+      <Link href="https://github.com/marciofrancalima/file-converter">
         <Button
           variant="default"
           size="lg"
